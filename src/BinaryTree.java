@@ -17,6 +17,10 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>
       initializeTree(rootData, leftTree, rightTree);
    } // end constructor
 
+   public BinaryTree(String pre, String in){
+
+   }
+
    public void setTree(T rootData, BinaryTreeInterface<T> leftTree,
                                    BinaryTreeInterface<T> rightTree)
    {
@@ -110,7 +114,10 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>
     * prints (using post-order traversal) all nodes in the "whole" tree */
    public void postorderTraverse_callBinaryNodeMethod()
    {
-      root.postorderTraverse_binaryNodeMethod();
+      if (root != null){
+         root.postorderTraverse_binaryNodeMethod();
+      }
+      //root.postorderTraverse_binaryNodeMethod();
    }
    
    /** -------------------------------------------------------------------- */
