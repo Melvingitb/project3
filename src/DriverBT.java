@@ -94,10 +94,10 @@ public class DriverBT
 		System.out.println("     A      ");
 		System.out.println("   /   \\  ");
 		System.out.println("  B     C  ");
-		System.out.println("        / \\ ");
-		System.out.println("       D   E");
-		System.out.println("      /   / \\");
-		System.out.println("     F   G   H");
+		System.out.println("       / \\ ");
+		System.out.println("      D   E");
+		System.out.println("     /   / \\");
+		System.out.println("    F   G   H");
 		System.out.println();
 
 	} // end createTree2
