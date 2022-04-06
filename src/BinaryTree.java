@@ -197,6 +197,21 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>
 		   numberOfNodes = root.getNumberOfNodes_binaryNodeMethod();
 	   return numberOfNodes;
    } // end getNumberOfNodes_callBinaryNodeMethod
+
+   //Versions that return a string so that it can be tested
+   protected String testpostOrderTraverse(BinaryNode<T> node){
+      String x = "";
+      if (node != null){
+         x += testpostOrderTraverse(node.getLeftChild());
+         x += testpostOrderTraverse(node.getRightChild());
+         x += node.getData();
+      }
+      return x;
+   }
+
+   protected String testpostorderTraverseCallNode(){
+      return root.testpostorderTraverse_binaryNodeMethod();
+   }
    
 } // end BinaryTree
 

@@ -110,12 +110,10 @@ class BinaryNode<T>
          if (hasLeftChild()){
             leftChild.postorderTraverse_binaryNodeMethod();
          }
-         //leftChild.postorderTraverse_binaryNodeMethod();
          if (rightChild != null){
             rightChild.postorderTraverse_binaryNodeMethod();
 
          }
-         //rightChild.postorderTraverse_binaryNodeMethod();
          System.out.println(data);
       }
    }
@@ -159,5 +157,23 @@ class BinaryNode<T>
 	     rightNumber = rightChild.getNumberOfNodes_binaryNodeMethod();
 	  return 1 + leftNumber + rightNumber;
 	} // end getNumberOfNodes
+
+   //Versions that make a string to be tested
+   protected String testpostorderTraverse_binaryNodeMethod()
+   {
+      String x = "";
+      if (data != null){
+         if (hasLeftChild()){
+            x += leftChild.testpostorderTraverse_binaryNodeMethod();
+         }
+         if (rightChild != null){
+            x += rightChild.testpostorderTraverse_binaryNodeMethod();
+
+         }
+         x += data;
+         //System.out.println(data);
+      }
+      return x;
+   }
 	
 } // end BinaryNode
