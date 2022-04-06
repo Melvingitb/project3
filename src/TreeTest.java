@@ -78,4 +78,17 @@ public class TreeTest {
         int expected = 7;
         assertEquals(expected, actual);
     }
+
+    @Test
+    void createTree2Test(){
+        BinaryTree<String> testingtree = new BinaryTree<>();
+
+        DriverBT.createTree2(testingtree);
+        String actual = testingtree.testpostOrderTraverse(testingtree.getRootNode());
+
+        String expected = "BFDGHECA";
+
+        assertEquals(expected, actual);
+
+    }
 }
