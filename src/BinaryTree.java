@@ -18,7 +18,11 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>
    } // end constructor
 
    public BinaryTree(String pre, String in){
-
+      //BinaryNode<String> x = new BinaryNode<>(preorder[0]);
+      String temp;
+      String temp2;
+      BinaryTree<String> x = new BinaryTree<>(pre.substring(0, 1));
+      
    }
 
    public void setTree(T rootData, BinaryTreeInterface<T> leftTree,
@@ -195,3 +199,53 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>
    } // end getNumberOfNodes_callBinaryNodeMethod
    
 } // end BinaryTree
+
+/*
+String[] preorder = new String[pre.length()];
+String[] inorder = new String[in.length()];
+
+for (int i = 0; i < preorder.length; i++){
+   if (i != preorder.length - 1){
+      preorder[i] = pre.substring(i, i + 1);
+   }
+   else{
+      preorder[i] = pre.substring(i);
+   }
+}
+
+for (int i = 0; i < inorder.length; i++){
+   if (i != inorder.length - 1){
+      inorder[i] = in.substring(i, i + 1);
+   }
+   else{
+      inorder[i] = in.substring(i);
+   }
+}
+*/
+/*
+      //BinaryNode<String> x = new BinaryNode<>(preorder[0]);
+      String temp;
+      String temp2;
+      BinaryTree<String> x = new BinaryTree<>(pre.substring(0, 1));
+      for (int i = 0; i < in.indexOf(pre.substring(0, 1)); i++){
+         if (i != in.length() - 1){
+            temp += in.substring(i, i + 1);
+         }
+         else{
+            temp += in.substring(i);
+         }
+      }
+      boolean finished = false;
+      for (int i = 0; i < temp.length() && !finished; i++){
+         for (int j = 0; j < in.length(); j++){
+            if (j != in.length() - 1 && i != temp.length() - 1){
+               if (in.substring(j, j + 1).equals(temp.substring(i, i + 1))){
+                  BinaryTree<String> y = new BinaryTree<>()
+               }
+            }
+         }
+      }
+      x.getRootNode().setLeftChild();
+      //BinaryTree<String> y = new BinaryTree<>(preorder[0]);
+      initializeTree(pre, x, y);
+      */
