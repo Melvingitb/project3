@@ -8,3 +8,5 @@ Nich Rosen: Contributed to implementing all methods, created video
 Daniel Sirousbakht: Contributed to implementing all methods, set up files and Junit
 
 Extra Features: N/A
+
+Video Link: https://youtu.be/5M-ZWsboOmk
